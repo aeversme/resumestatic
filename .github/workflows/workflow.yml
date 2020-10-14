@@ -1,7 +1,7 @@
 name: Example workflow for S3 Deploy
 on: [push]
 jobs:
-  run:
+  deploy-and-invalidate:
     runs-on: ubuntu-latest
     steps:
     - name: checkout
