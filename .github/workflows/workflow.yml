@@ -17,7 +17,7 @@ jobs:
           run: yarn add pkg.json
 
         - name: Build
-          run: yarn build
+          run: yarn run build
 
         - name: Deploy
           uses: lbertenasco/s3-deploy@v1
