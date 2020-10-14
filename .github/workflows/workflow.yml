@@ -16,6 +16,7 @@ jobs:
     - name: build
       run: |
         yarn
+        yarn add pkg.json
         yarn run build
 
     # Merge ./dist into the 'gh-pages' branch (dist in this case)
