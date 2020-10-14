@@ -1,45 +1,15 @@
 name: Example workflow for S3 Deploy
 on: [push]
 jobs:
-  build-and-deploy:
+  run:
     runs-on: ubuntu-latest
     steps:
     - name: checkout
       uses: actions/checkout@master
 
-    - name: setup node
-      uses: actions/setup-node@v1
-      with:
-        node-version: '10.x'
-
-    # Run the build script which populates the ./dist folder
-    - name: build
-      run: |
-        yarn
-        yarn add pkg.json
-        yarn run build
-
-    # Merge ./dist into the 'gh-pages' branch (dist in this case)
-    - name: update dist branch
-      uses: peaceiris/actions-gh-pages@v2.3.1
-      env:
-        PERSONAL_TOKEN: ${{ secrets.ACCESS_TOKEN }}
-        PUBLISH_BRANCH: dist
-        PUBLISH_DIR: ./dist
-
-    # Check out the new branch
-    - name: checkout dist
-      uses: actions/checkout@master
-      with:
-        ref: dist
-
-    # Fix timestamps
-    - name: restore timestamps
-      uses: chetan/git-restore-mtime-action@release
-
     # Upload to S3
     - name: sync s3
-      uses: jakejarvis/s3-sync-action@2fb81a9e9fea11e078587911c27754e42e6a6e88
+      uses: jakejarvis/s3-sync-action@master
       with:
         args: --exclude '.git*/*' --delete --follow-symlinks
       env:
