@@ -20,18 +20,13 @@ body {
 }
 
 .container {
-  max-width: 800px;
+  max-width: 1000px;
   background: #fff;
   margin: 0px auto 0px;
   box-shadow: 1px 1px 2px #DAD7D7;
   border-radius: 3px;
   padding: 40px;
   margin-top: 50px;
-}
-
-.certs {
-  align: center;
-  margin-bottom: 15px;
 }
 
 .header {
