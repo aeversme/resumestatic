@@ -2,9 +2,10 @@
 <html lang="en" >
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Alex Eversmeyer: Resume</title>
   <link rel="stylesheet" href="./style.css">
-
+  <script type="text/javascript" src="./count.js"></script>
 </head>
 <body>
 <!-- partial:index.partial.html -->
@@ -26,8 +27,7 @@
     </div>
       <div class="about">
       <span class="position">Midlife Career Changer</span>
-      <span class="desc">
-Some information about me.
+      <span class="desc">A self-motivated, enthusiastic 
       </span>
     </div>
   </div>
@@ -41,7 +41,9 @@ Some information about me.
        <div class="section__list">
          <div class="section__list-item">
            <div class="name">Resume Challenge</div>
-           <div class="text">This website! </div>
+           <div class="text">This website! Served by CloudFront from S3, this site is written in HTML, CSS, and JavaScript, and makes use of Certificate Manager and Route 53 for the front end. The visitor counter utilizes the Serverless Application Model to launch a DynamoDB table, a Lambda function, and an API Gateway. GitHub Actions provides CI/CD automation.</div>
+         </br>
+           <div class="text">You are visitor number <span id="count"></span>.</div>
          </div>
          <div class="section__list-item">
                     <div class="name">Another Project</div>
@@ -55,7 +57,7 @@ Some information about me.
        <div class="section__list">
          <div class="section__list-item">
            <div class="name">AWS Solutions Architect Associate (SAA-C02)</div>
-           <div class="text">August 18, 2020</div>           
+           <div class="text">October 12, 2020</div>           
            <div class="text">Validation number K8HFB8RDC2FQQZS0 - <a href="http://aws.amazon.com/verification">Validate here</a></div>
          </div>
         <div class="section__list-item">
@@ -173,14 +175,13 @@ Some information about me.
        </div>
        <div class="section__list">
          <div class="section__list-item">
-                  3D rendering
+                  3D rendering; 3D printing; multisport competition
           </div>
        </div>
      </div>
      </div>
   </div>
 </div>
-<!-- partial -->
   <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
 </body>
 </html>
