@@ -1,8 +1,10 @@
+/*
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
+*/
 
 html {
   height: 100%;
@@ -63,7 +65,7 @@ body {
   color: #999;
   font-weight: 300;
 }
-.header .separator {
+.separator {
   height: 10px;
   display: inline-block;
   border-left: 2px solid #999;
@@ -96,47 +98,32 @@ body {
 .details .section__list-item {
   margin-bottom: 40px;
 }
-.details .section__list-item:last-of-type {
-  margin-bottom: 0;
-}
+
 .details .left,
 .details .right {
-  vertical-align: top;
   display: inline-block;
 }
+
 .details .left {
-  width: 75%;
+  vertical-align: middle;
+  width: 10%;
 }
 .details .right {
-  text-align: right;
-  width: 24%;
+  vertical-align: middle;
+  padding-left: 20px;
+  width: 80%;
 }
 .details .name {
   font-weight: bold;
 }
 .details a {
-  text-decoration: none;
   color: #000;
-  font-style: italic;
 }
 .details a:hover {
-  text-decoration: underline;
-  color: #000;
+  color: #54AFE4;
 }
-.details .skills__item {
-  margin-bottom: 10px;
-}
-.details .skills__item .right input {
-  display: none;
-}
-.details .skills__item .right label {
-  display: inline-block;
-  width: 20px;
-  height: 20px;
-  background: #C3DEF3;
-  border-radius: 20px;
-  margin-right: 3px;
-}
-.details .skills__item .right input:checked + label {
-  background: #79A9CE;
+
+
+.tagline {
+  font-style: italic;
 }

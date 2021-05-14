@@ -13,25 +13,20 @@
 
 <div class="container">
   <div class="header">
-    <div class="left">
     <div class="full-name">
       <span class="first-name">Alex</span> 
       <span class="last-name">Eversmeyer</span>
     </div>
     <div class="contact-info">
       <span class="email">Email: </span>
-      <span class="email-val">alexeversmeyer@gmail.com</span>
+      <span class="email-val">alex.eversmeyer@gmail.com</span>
       <span class="separator"></span>
       <span class="phone">Phone: </span>
       <span class="phone-val">412.443.7316</span>
     </div>
       <div class="about">
-      <span class="desc">A self-motivated, enthusiastic midlife career changer, looking for cloud engineer and developer positions.
+          <span class="desc tagline">A self-motivated, enthusiastic midlife career changer pursuing cloud engineer and developer positions.
       </span>
-    </div>
-  </div>
-    <div class="right">
-      <img src="image/saa84.png"> <img src="image/clf84.png">
     </div>
   </div>
   <div class="details">
@@ -39,24 +34,34 @@
       <div class="section__title">Projects</div> 
        <div class="section__list">
          <div class="section__list-item">
-           <div class="name">Resume Challenge</div>
-           <div class="text">This website! Served by CloudFront from S3, this site is written in HTML, CSS, and
-               JavaScript, and makes use of Certificate Manager and Route 53 for the front end. AWS Serverless
-               Application Model is utilized to launch a CloudFormation stack that includes DynamoDB, Lambda, and API
-               Gateway. GitHub Actions provides CI/CD automation.</div>
+           <div class="name">Forrest Brazeal's Cloud Resume Challenge - this website!</div>
+           <div class="tagline">AWS-based full-stack serverless coding project for cloud newbies.</div>
+           <div class="text">
+               <ul>
+                <li>HTML, CSS, JavaScript hosted on S3</li>
+                <li>CloudFront and Certificate Manager for HTTPS</li>
+                <li>Route53 for DNS</li>
+                <li>AWS Serverless Application Model for Infrastructure as Code</li>
+                <li>DynamoDB, Lambda, and API Gateway for visitor counter</li>
+                <li><a href="https://github.com/aeversme/resumestatic" target="_blank">GitHub</a> Actions for CI/CD automation</li>
+                <li>Design Narrative: <a href="https://alexeversmeyer.com/post/5" target="_blank">https://alexeversmeyer.com/post/5</a></li>
+               </ul>
+           </div>
            <br>
            <div class="text">This is a dynamic page hit counter. You are visitor number <span id="count"></span>.</div>
-           <br>
-           <div class="text"><a href="https://alexeversmeyer.com/post/5" target="_blank">Click here</a> to read the
-               blog post I wrote about completing this project.</div>
          </div>
          <div class="section__list-item">
-                    <div class="name">Portfolio Web Application - <a href="https://alexeversmeyer.com" target="_blank">
+                    <div class="name">Hand-Coded Blog WebApp & Portfolio Website - <a href="https://alexeversmeyer.com" target="_blank">
                         alexeversmeyer.com</a></div>
-           <div class="text">Written in Python using the Flask framework, with a frontend authored in HTML and
-               Bootstrap CSS, this app is hosted on AWS. Infrastructure, including EC2, auto-scaling and load
-               balancing, is managed by Elastic Beanstalk. The MySQL database is an RDS instance for persistent
-               storage, and DNS is handled by Route53. GitHub Actions provides CI/CD automation.
+                        <div class="tagline">Python bootcamp capstone project, developed from scratch and deployed to AWS.</div>
+           <div class="text">
+               <ul>
+                <li>HTML and Bootstrap CSS front end</li>
+                <li>Flask framework</li>
+                <li>AWS Elastic Beanstalk-managed infrastructure, auto-scaling, and load-balancing</li>
+                <li>AWS MySQL RDS for persistent storage</li>
+                <li><a href="https://github.com/aeversme/portfolio-webapp" target="_blank">GitHub</a> Actions for CI/CD automation</li>
+               </ul>
            </div>
          </div>
        </div>
@@ -64,12 +69,20 @@
     <div class="section">
       <div class="section__title">Certifications</div> 
        <div class="section__list">
+           <div class="section__list-item">
+               <span class="tagline">In progress: AWS Developer Associate (DVA-002), expected June 2021</span>
+           </div>
          <div class="section__list-item">
+             <div class="left"><img src="image/saa84.png"></div>
+             <div class="right">
            <div class="name">AWS Solutions Architect Associate (SAA-C02)</div>
            <div class="text">October 12, 2020</div>           
            <div class="text">Validation number K8HFB8RDC2FQQZS0 - <a href="http://aws.amazon.com/verification">Validate here</a></div>
+                 </div>
          </div>
         <div class="section__list-item">
+           <div class="left"><img src="image/clf84.png"></div>
+             <div class="right">
           <div class="name">AWS Cloud Practitioner (CLF-C01)</div>
           <div class="text">August 18, 2020</div>
           <div class="text">Validation number 0RJV3S3KNBQQQZCF - <a href="http://aws.amazon.com/verification">Validate here</a></div>
@@ -80,28 +93,43 @@
       <div class="section__title">Work Experience</div>
       <div class="section__list">
         <div class="section__list-item">
-          <div class="left">
-            <div class="name">Apex Velo</div>
-            <div class="addr">Newton, MA</div>
-            <div class="desc">Delivered excellent customer service; integrated technology into bicycle service
-                workflow; supervised, trained, and advised other service department staff.</div>
-          </div>
-          <div class="right">
             <div class="name">Service Manager</div>
-            <div class="duration">Feb 2019 - present</div>
+            <div class="addr">Apex Velo<span class="header separator"></span>Newton, MA</div>
+              <div class="tagline">February 2019 - Present</div>
+            <div class="desc">
+                <ul>
+                    <li>Fostered open and effective communication with clients.</li>
+                    <li>Implemented repeatable service workflow processes.</li>
+                    <li>Supervised, trained, and advised other service department staff.</li>
+                </ul>
+            </div>
           </div>
-        </div>
-                <div class="section__list-item">
-          <div class="left">
-            <div class="name">Performance Bicycle</div>
-            <div class="addr">Pittsburgh, PA</div>
-            <div class="desc">Managed high-volume service schedule for efficient turnaround; delivered excellent
-                customer service; supervised, trained, and advised other service department staff.</div>
-          </div>
-          <div class="right">
+        <div class="section__list-item">
             <div class="name">Lead Mechanic</div>
-            <div class="duration">Jun 2016 - Jan 2019</div>
+            <div class="addr">Performance Bicycle<span class="separator"></span>Pittsburgh, PA</div>
+              <div class="tagline">Jun 2016 - Jan 2019</div>
+            <div class="desc">
+                <ul>
+                    <li>Oversaw all service department operations, including repairs, warranty claims, and small parts ordering.</li>
+                    <li>Managed high-volume schedule for efficient turnaround.</li>
+                    <li>Developed relationships with clients to enhance bike fitting services.</li>
+                </ul>
+            </div>
           </div>
+        <div class="section__list-item">
+            <div class="name">Physical Education Teacher & Coach</div>
+            <div class="addr">The Potomac School<span class="separator"></span>McLean, VA</div>
+              <div class="tagline">August 2009 - August 2014</div>
+            <div class="desc">
+                <ul>
+                    <li>Planned and taught a skill-based curriculum to students in grades K-3.</li>
+                    <li>Planned and taught a sports-based curriculum to students in grades 4-5.</li>
+                    <li>Coached middle school cross country, weights and conditioning, and track and field.</li>
+                    <li>Coached Varsity cross country, indoor track, and outdoor track and field.</li>
+                    <li>Directed track meets and invitationals at the Intermediate and Varsity levels.</li>
+                    <li>Authored curricula within the <span class="tagline">Understanding by Design</span> framework.</li>
+                </ul>
+            </div>
         </div>
       </div>
     </div>
@@ -109,89 +137,19 @@
       <div class="section__title">Education</div>
       <div class="section__list">
         <div class="section__list-item">
-          <div class="left">
-            <div class="name">University of Michigan</div>
-            <div class="addr">Ann Arbor, MI</div>
-          </div>
-          <div class="right">
-            <div class="name">B.S. Kinesiology</div>
-            <div class="desc">Physical Education major</div>
-          </div>
+            <div class="addr">University of Michigan<span class="separator"></span>Ann Arbor, MI</div>
+            <div class="addr">B.S. Kinesiology, Physical Education major</div>
         </div>
-
       </div>
     </div>
-     <div class="section">
-       <div class="section__title">Skills</div>
-       <div class="skills">
-         <div class="skills__item">
-           <div class="left"><div class="name">
-             Amazon Web Services
-             </div></div>
-           <div class="right">
-                          <input  id="ck1" type="checkbox" checked/>
 
-             <label for="ck1"></label>
-                          <input id="ck2" type="checkbox" checked/>
-
-              <label for="ck2"></label>
-                         <input id="ck3" type="checkbox" checked/>
-
-              <label for="ck3"></label>
-                           <input id="ck4" type="checkbox" />
-            <label for="ck4"></label>
-                          <input id="ck5" type="checkbox" />
-              <label for="ck5"></label>
-           </div>
-         </div>
-       </div>
-       <div class="skills__item">
-           <div class="left"><div class="name">
-            Python</div></div>
-           <div class="right">
-                          <input  id="ck6" type="checkbox" checked/>
-
-             <label for="ck1"></label>
-                          <input id="ck7" type="checkbox" checked/>
-
-              <label for="ck2"></label>
-                         <input id="ck8" type="checkbox" checked/>
-
-              <label for="ck3"></label>
-                           <input id="ck9" type="checkbox" />
-            <label for="ck4"></label>
-                          <input id="ck10" type="checkbox" />
-              <label for="ck5"></label>
-           </div>
-         </div>
-       <div class="skills__item">
-           <div class="left"><div class="name">
-            HTML/CSS</div></div>
-           <div class="right">
-                          <input  id="ck11" type="checkbox" checked/>
-
-             <label for="ck1"></label>
-                          <input id="ck12" type="checkbox" checked/>
-
-              <label for="ck2"></label>
-                         <input id="ck13" type="checkbox" />
-
-              <label for="ck3"></label>
-                           <input id="ck14" type="checkbox" />
-            <label for="ck4"></label>
-                          <input id="ck15" type="checkbox" />
-              <label for="ck5"></label>
-           </div>
-         </div>
-       </div>
      <div class="section">
      <div class="section__title">
        Interests
        </div>
        <div class="section__list">
-         <div class="section__list-item">
-                  Aviation; 3D rendering; Photography; 3D printing; Multisport competition
-          </div>
+         <div class="section__list-item">Eleven years of volunteering with grieving children at Comfort Zone Camps; Elite amateur multisport competition;
+<br>Photography; 3D printing; Aviation</div>
        </div>
      </div>
      </div>
