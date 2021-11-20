@@ -122,7 +122,12 @@ body {
 .details a:hover {
   color: #54AFE4;
 }
-
+.contact-info a {
+  color: #000;
+}
+.contact-info a:hover {
+  color: #54AFE4;
+}
 
 .tagline {
   font-style: italic;
